@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: product-crud
+      MYSQL_DATABASE: product-crud
+      MYSQL_USER: product-crud
+      MYSQL_PASSWORD: product-crud
+    ports:
+      - "3306:3306"
+
+volumes:
+  db:
